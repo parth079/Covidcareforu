@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:text="Corona Dashboard"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="54dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fdfcdc"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="ICU"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            app:cardBackgroundColor="#FFF928">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp"
+                                android:orientation="vertical"
+                               >
+
+                                <TextView
+                                    android:id="@+id/tv2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            app:cardBackgroundColor="#00E2FF">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Occupied"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#6fffe9">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vacant"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fdfcdc"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="O2 SUPPLY-BED"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+
+                            app:cardBackgroundColor="#FFF928">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+
+                            app:cardBackgroundColor="#00E2FF">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Occupied"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#6fffe9">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vacant"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fdfcdc"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="ICU without Ventilator"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+
+                            app:cardBackgroundColor="#FFF928">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+
+                            app:cardBackgroundColor="#00E2FF">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Occupied"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#6fffe9">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vacant"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fdfcdc"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="ICU with Ventilator"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+
+                            app:cardBackgroundColor="#FFF928">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+
+                            app:cardBackgroundColor="#00E2FF">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Occupied"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="#6fffe9">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <TextView
+                                    android:id="@+id/tv16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vacant"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/n12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

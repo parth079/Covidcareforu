@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Covidcareforu</string>
+    <string-array name="hospital">
+        <item>Private</item>
+        <item>Government</item>
+        <item>Rural</item>
+</string-array>
+</resources>
